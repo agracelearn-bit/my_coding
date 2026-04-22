@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Channel</title>
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f172a, #020617);
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+header h1 {
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+/* NAV */
+nav a {
+  margin: 0 12px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* SECTION */
+section {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* VIDEO GRID */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* VIDEO CARD */
+.video-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 0 20px rgba(56,189,248,0.25);
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 PERFECT YOUTUBE THUMBNAIL */
+.video-card img {
+  width: 100%;
+  aspect-ratio: 13/9;   /* ✅ Correct ratio */
+  object-fit: cover;    /* ✅ Fill like YouTube */
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Code Hub 🚀</h1>
+  <nav>
+    <a href="yw.html">Home</a>
+    <a href="video.html">Videos</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- VIDEO SECTION -->
+<section>
+  <h2>My Videos 🎬</h2>
+  <hr><br>
+
+  <div class="video-grid">
+
+    <!-- VIDEO 1 -->
+    <a href="https://www.youtube.com/channel/UCRZNmBPLuMmBjYF6LaqFtig" target="_blank">
+      <div class="video-card">
+        <img src="WhatsApp Image 2026-04-22 at 14.09.34.jpeg" alt="Thumbnail">
+        <div class="play-btn">▶</div>
+      </div>
+    </a>
+
+    <!-- ADD MORE VIDEOS BELOW -->
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 My Channel | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

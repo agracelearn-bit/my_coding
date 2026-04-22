@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My YouTube Channel</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f172a, #020617);
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* VIDEO GRID */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* VIDEO CARD */
+.video-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 0 20px rgba(56,189,248,0.3);
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.video-card img {
+  width: 100%;
+  aspect-ratio: 13/9;
+  object-fit: cover;
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  background: rgba(0,0,0,0.6);
+  padding: 12px 18px;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Coding Channel 🚀</h1>
+  <nav>
+    <a href="#Home">Home</a>
+    <a href="video.html">Videos</a>
+    <a href="about.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+    ▶️YouTube🔴
+  <h1>Welcome To Code Hub Youtube Channel 👋 </h1>
+  <h2>I create all Coding Videos</h2>
+  <button class="btn" onclick="subscribe()">Subscribe 🔔</button>
+
+  <br><br><hr><br>
+
+  <div class="video-grid">
+
+    <!-- VIDEO 1 -->
+    <a href="https://www.youtube.com/channel/UCRZNmBPLuMmBjYF6LaqFtig" target="_blank">
+      <div class="video-card">
+        <img src="WhatsApp Image 2026-04-22 at 14.09.34.jpeg">
+        <div class="play-btn">▶</div>
+      </div>
+    </a>
+
+    <!-- ADD MORE VIDEOS LIKE ABOVE -->
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 My Channel | All Rights Reserved</p>
+</footer>
+
+<script>
+function subscribe() {
+  window.open("https://www.youtube.com/channel/UCRZNmBPLuMmBjYF6LaqFtig", "_blank");
+}
+</script>
+
+</body>
+</html>
